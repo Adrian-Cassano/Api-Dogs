@@ -1,0 +1,63 @@
+#MasterContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--COLOR_FONDO);
+  color: var(--COLOR_TEXT);
+}
+#ModalContainer{
+  width: 80rem;
+  height: 40rem;
+  background-color: rgba(154, 110, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  border-radius: 50rem;
+  border-top: solid var(--COLOR_MUD) 20px;
+  border-bottom: solid var(--COLOR_MUD) 20px;
+  margin-bottom: 100px;
+}
+#Modal{
+    width: 450px;
+    background-color: var(--COLOR_BASE);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4rem 0rem;
+    border: solid 5px var(--COLOR_MUD);
+}
+#TitleContainer{
+  width: 100%;
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-around;
+  align-items: flex-start;
+
+}
+#CloseButton{
+  background-color: var(--COLOR_BASE);
+  text-decoration: none;
+  font-size: 1rem;
+  border: solid 3px var(--COLOR_MUD);
+  cursor: pointer;
+  color: var(--COLOR_TEXT)
+}
+#CloseButton:hover{
+  background-color:var(--COLOR_MUD) ;
+}
+#InputContainer{
+  height: 350px;
+  width: 350px;
+  margin: 1rem;
+}
+.Input{
+  width: 20rem;
+  background-color: var(--COLOR_MUD);
+  color: var(--COLOR_TEXT);
+}

@@ -1,0 +1,78 @@
+#MasterContainer {
+  width: 100vw;
+  height: 30px;
+  margin: 20px 0px;
+}
+#NavBarContainer {
+  background-color: var(--COLOR_MUD);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Search {
+  padding: 10px;
+  margin: 0px 5px;
+  border: 5px solid var(--COLOR_DIRT);
+  background-color: var(--COLOR_MUD);
+  color: var(--COLOR_TEXT);
+}
+#ButtonCreate {
+  text-decoration: none;
+  padding: 10px;
+  margin: 0px 5px;
+  border: 5px solid var(--COLOR_DIRT);
+  background-color: var(--COLOR_MUD);
+  font-family: var(--FONT_TEXT);
+  color: var(--COLOR_TEXT);
+  cursor: pointer;
+}
+#Select {
+  display: flex;
+}
+#CardsContainer {
+  width: 98%;
+  background-color: rgba(154, 110, 0, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+#ContainerNumPage {
+  width: 100%;
+  height: 50px;
+  background-color: var(--COLOR_MUD);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ButtonPage {
+  text-decoration: none;
+  background-color: var(--COLOR_MUD);
+  border-radius: 20px;
+  padding: 8px;
+  margin: 0 8px;
+  font-family: var(--FONT_TEXT);
+  color: var(--COLOR_TEXT);
+  font-size: 25px;
+  cursor: pointer;
+  border: solid var(--COLOR_BASE);
+}
+
+.ButtonPage:hover {
+  background-color: var(--COLOR_BASE);
+  
+}
+#NumPage{
+  text-decoration: none;
+  background-color: var(--COLOR_MUD);
+  border-radius: 20px;
+  padding: 8px;
+  margin: 0 8px;
+  font-family: var(--FONT_TEXT);
+  color: var(--COLOR_TEXT);
+  font-size: 25px;
+  cursor: default;
+  border: solid var(--COLOR_BASE);
+}

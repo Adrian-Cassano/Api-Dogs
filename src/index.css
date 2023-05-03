@@ -1,0 +1,24 @@
+:root{
+  /* COLORES */
+  --COLOR_BASE: rgba(121, 84, 32);
+  --COLOR_DIRT: rgb(154, 110, 0);
+  --COLOR_TEXT: bisque;
+  --COLOR_MUD:  rgb(68, 50, 25);
+  --COLOR_FONDO: rgba(0, 0, 0, 0.421);
+  /* FUENTE */
+  --FONT_TEXT: cursive;
+
+}
+NAME*{
+ margin: 0px;
+ border: 0px;
+ text-decoration: none;
+}
+body{
+  background-image: url(./Img/Perro2.jpg);
+  z-index: -1;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+}

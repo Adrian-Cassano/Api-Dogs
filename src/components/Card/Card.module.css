@@ -1,0 +1,39 @@
+#MasterContainer {
+  text-decoration: none;
+  background-color: rgba(154, 110, 0, 0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#CardContainer {
+  width: 300px;
+  height: 260px;
+  background-color: var(--COLOR_BASE);
+  border: solid 5px var(--COLOR_MUD);
+  border-radius: 50px 0px;
+  color: var(--COLOR_TEXT);
+  font-family: var(--FONT_TEXT);
+  display: inline-flex;
+  flex-direction: column;
+  margin: 5px;
+  align-items: center;
+}
+#CardContainer:hover{
+  background-color: var(--COLOR_MUD);
+}
+#Link{
+  margin: 9px;
+  width: 300px;
+  height: 260px;
+  border-radius: 50px 0px;
+}
+#Name {
+  text-align: center;
+  font-size: 18px;
+  margin: 5px;
+}
+#CardImg {
+  width: 200px;
+  height: 200px;
+}
+

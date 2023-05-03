@@ -1,0 +1,12 @@
+#MasterContainer {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#Select {
+  margin: 5px;
+  border: 5px solid var(--COLOR_DIRT);
+  background-color: var(--COLOR_MUD);
+  font-family: var(--FONT_TEXT);
+  color: var(--COLOR_TEXT);
+}

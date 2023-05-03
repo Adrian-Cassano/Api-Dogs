@@ -1,0 +1,15 @@
+#TitleContainer {
+  background-color: rgb(100, 74, 37);
+  width: 100%;
+  border-radius: 15px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+#Title {
+  font-family: var(--FONT_TEXT);
+  color: var(--COLOR_TEXT);
+}
