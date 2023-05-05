@@ -1,17 +1,20 @@
 #MasterContainer {
   width: 1600px;
-  height: 1000px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  
 }
 #ContainerButton {
   border-radius: 20px;
   width: 160px;
   height: 100px;
   display: flex;
-  margin-bottom: 500px;
+  margin-top: 300px;
+  
+  
 }
 #Link {
   text-decoration: none;
@@ -26,6 +29,7 @@
   color: var(--COLOR_TEXT);
   font-size: 30px;
   color: var(--COLOR_TEXT);
+  
 }
 #Link:hover {
   background-color: var(--COLOR_MUD);

@@ -10,21 +10,22 @@
   align-items: center;
   background-color: var(--COLOR_FONDO);
   color: var(--COLOR_TEXT);
+  font-family: var(--FONT_TEXT);
 }
 #ModalContainer{
   width: 80rem;
-  height: 40rem;
+  height: 35rem;
   background-color: rgba(154, 110, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items:  center;
-  border-radius: 50rem;
   border-top: solid var(--COLOR_MUD) 20px;
   border-bottom: solid var(--COLOR_MUD) 20px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 #Modal{
     width: 450px;
+    height: 32rem;
     background-color: var(--COLOR_BASE);
     display: flex;
     flex-direction: column;
@@ -40,15 +41,16 @@
   align-items: flex-start;
 
 }
-#CloseButton{
+.CloseButton{
   background-color: var(--COLOR_BASE);
   text-decoration: none;
   font-size: 1rem;
   border: solid 3px var(--COLOR_MUD);
   cursor: pointer;
-  color: var(--COLOR_TEXT)
+  color: var(--COLOR_TEXT);
+  margin-top: 10px;
 }
-#CloseButton:hover{
+.CloseButton:hover{
   background-color:var(--COLOR_MUD) ;
 }
 #InputContainer{
