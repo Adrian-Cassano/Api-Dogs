@@ -32,7 +32,6 @@
   display: flex;
 }
 #CardsContainer {
-  width: 98%;
   background-color: rgba(154, 110, 0, 0.3);
   display: flex;
   flex-wrap: wrap;
@@ -75,4 +74,11 @@
   font-size: 25px;
   cursor: default;
   border: solid var(--COLOR_BASE);
+}
+#Select {
+  margin: 5px;
+  border: 5px solid var(--COLOR_DIRT);
+  background-color: var(--COLOR_MUD);
+  font-family: var(--FONT_TEXT);
+  color: var(--COLOR_TEXT);
 }

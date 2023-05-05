@@ -1,9 +1,11 @@
-import React from "react";
-import { useDispatch } from "react-redux";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 import { addDogs } from "../../Redux/Slice/dogsSlice";
-import Title from "../../components/Title/Title"
+import Title from "../../components/Title/Title";
+import Select from "../../components/DisplaySelectOption/Select"
+
 
 import styles from "./CreateCard.module.css";
 
@@ -11,6 +13,18 @@ const Modal = (props) => {
   const dispatch = useDispatch();
 
   const navigate = useNavigate();
+
+  const dogsStore = useSelector((state) => state.dogsSlice.dogs);
+
+  useEffect(()=>{
+    if(!dogsStore || dogsStore.length === 0){
+      navigate("/")
+    }
+  })
+
+  const close = () =>{
+    navigate("/home")
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -49,12 +63,12 @@ const Modal = (props) => {
 
   return (
     <div id={styles.MasterContainer}>
-      <Title/>
+      <Title />
       <div id={styles.ModalContainer}>
         <div id={styles.Modal}>
           <div id={styles.TitleContainer}>
             <div id={styles.Title}>Create your new dog card </div>
-            <button onClick={props.toggleModal} id={styles.CloseButton}>
+            <button onClick={close} className={styles.CloseButton}>
               X
             </button>
           </div>
@@ -63,7 +77,7 @@ const Modal = (props) => {
               <div>NAME</div>
               <input maxLength="30" className={styles.Input} />
               <div> BREED</div>
-              <input maxLength="60" className={styles.Input} />
+              <Select/>
               <div> BRED FOR</div>
               <input maxLength="60" className={styles.Input} />
               <div> ORIGIN</div>
@@ -76,7 +90,7 @@ const Modal = (props) => {
               <input maxLength="60" className={styles.Input} />
               <div> SIZE IN METERS</div>
               <input maxLength="60" className={styles.Input} />
-              <button>aceptar</button>
+              <button className={styles.CloseButton}>aceptar</button>
             </form>
           </div>
         </div>
