@@ -10,7 +10,7 @@
   height: 260px;
   background-color: var(--COLOR_BASE);
   border: solid 5px var(--COLOR_MUD);
-  border-radius: 50px 0px;
+  border-radius: 2rem 0rem;
   color: var(--COLOR_TEXT);
   font-family: var(--FONT_TEXT);
   display: inline-flex;
