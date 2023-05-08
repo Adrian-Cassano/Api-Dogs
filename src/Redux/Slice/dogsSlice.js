@@ -3,7 +3,7 @@ import DogPhoto from "../../Img/Perro2.jpg";
 
 const initialState = {
   dogs: [],
-  ultimoID: 266,
+  ultimoID: 290,
 };
 
 export const dogsSlice = createSlice({

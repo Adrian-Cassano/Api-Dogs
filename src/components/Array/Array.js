@@ -1,5 +1,6 @@
 
 const BREEDS = [
+    {breeds:"All", key:1},
     {breeds:"Toy", key:2},
     {breeds:"Hound",key:3},
     {breeds:"Terrier",key:4},

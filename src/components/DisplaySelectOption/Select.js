@@ -14,10 +14,14 @@ const Select = () => {
         id={styles.Select}
       >
         {BREEDS?.map((dog) => {
+          
           return (
-            <option value={dog.breeds} key={dog.key}>
+            dog.breeds !== "All" &&(
+              <option value={dog.breeds} key={dog.key}>
               {dog.breeds}
             </option>
+            )
+           
           );
         })}
       </select>

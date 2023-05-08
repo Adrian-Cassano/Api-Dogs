@@ -14,8 +14,7 @@ var minimo = 0;
 var maximo = 9;
 
 const Home = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const dogsStore = useSelector((state) => state.dogsSlice.dogs);
 
@@ -23,19 +22,20 @@ const Home = () => {
 
   const [numPage, setNumPage] = useState(i);
 
-  const [breeds1, setBreeds] = useState(BREEDS[0].breeds);
+  const [breeds1, setBreeds] = useState();
 
   var promedio = dogs.length / 10;
-  
-  useEffect(()=>{
-    if(!dogsStore || dogsStore.length === 0){
-      navigate("/")
+
+  useEffect(() => {
+    if (!dogsStore || dogsStore.length === 0) {
+      navigate("/");
     }
-  })
+  });
 
   const handleInputChange = (e) => {
     setBreeds(BREEDS[0].breeds);
-    const search = e.target.value.replace(/[^A-Za-z ]/gi, "");
+
+    const search = e.target.value;
 
     var perrosFiltrados = dogsStore?.filter((dog) =>
       dog.name.toLowerCase().toString().includes(search)
@@ -50,14 +50,23 @@ const Home = () => {
   };
 
   const onChangeSelect = (e) => {
-    setBreeds();
     const breeds = e.target.value;
 
-    var perrosFiltrados = dogsStore?.filter((dog) =>
-      dog.breed_group?.includes(breeds)
-    );
+    if (breeds === "All") {
+      setDogs(dogsStore);
+    } else {
+      var perrosFiltrados = dogsStore?.filter((dog) =>
+        dog.breed_group?.includes(breeds)
+      );
 
-    setDogs(perrosFiltrados);
+      setNumPage(1);
+      minimo = 0;
+      maximo = 9;
+      i = 1;
+
+      setDogs(perrosFiltrados);
+      setBreeds();
+    }
   };
 
   const buttonNext = () => {
@@ -87,7 +96,6 @@ const Home = () => {
           <div>
             <input
               maxLength="30"
-              onEmptied={handleInputChange}
               onChange={handleInputChange}
               id={styles.Search}
               type="text"
@@ -110,7 +118,7 @@ const Home = () => {
         {dogs?.map((dog, index) => {
           return (
             <Card
-              key={index + dog.id}
+              key={dog.id}
               id={dog.id}
               index={index}
               name={dog.name}

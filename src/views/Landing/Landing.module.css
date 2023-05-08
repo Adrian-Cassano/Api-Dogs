@@ -1,11 +1,10 @@
 #MasterContainer {
-  width: 1600px;
+  width: 100vw;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  
 }
 #ContainerButton {
   border-radius: 20px;
