@@ -1,6 +1,6 @@
 import React from "react";
 
-import BREEDS from "../../components/Array/Array";
+import BREEDS from "../../components/Array/ArrayBreeds";
 
 import styles from "./Select.module.css";
 
@@ -14,7 +14,6 @@ const Select = () => {
         id={styles.Select}
       >
         {BREEDS?.map((dog) => {
-          
           return (
             dog.breeds !== "All" &&(
               <option value={dog.breeds} key={dog.key}>

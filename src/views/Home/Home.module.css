@@ -1,12 +1,12 @@
 #MasterContainer {
   width: 100vw;
-  height: 30px;
-  margin: 20px 0px;
+  font-family: var(--FONT_TEXT);
+  color: var(--COLOR_TEXT);
 }
 #NavBarContainer {
+  margin-top: 4rem;
   background-color: var(--COLOR_MUD);
   width: 100%;
-  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,9 +28,23 @@
   color: var(--COLOR_TEXT);
   cursor: pointer;
 }
-#Select {
+#SelectContainer{
   display: flex;
+  justify-content: space-between;
 }
+.SelectCU{
+  
+  display: flex;
+  flex-direction: column;
+}
+#Select {
+  margin: 5px;
+  border: 5px solid var(--COLOR_DIRT);
+  background-color: var(--COLOR_MUD);
+  font-family: var(--FONT_TEXT);
+  color: var(--COLOR_TEXT);
+}
+
 #CardsContainer {
   background-color: rgba(154, 110, 0, 0.3);
   display: flex;
@@ -75,10 +89,14 @@
   cursor: default;
   border: solid var(--COLOR_BASE);
 }
-#Select {
-  margin: 5px;
-  border: 5px solid var(--COLOR_DIRT);
-  background-color: var(--COLOR_MUD);
+.ButtonPageOFF{
+  text-decoration: none;
+  background-color: gainsboro;
+  border-radius: 20px;
+  padding: 8px;
+  margin: 0 8px;
   font-family: var(--FONT_TEXT);
-  color: var(--COLOR_TEXT);
+  color: grey;
+  font-size: 25px;
+  border: solid grey;
 }
