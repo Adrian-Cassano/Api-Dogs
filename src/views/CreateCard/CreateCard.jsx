@@ -39,11 +39,11 @@ const Modal = (props) => {
     const sizeInMeters = e.target[7].value;
 
     if (name === "") {
-      alert("Ingrese un nombre");
+      alert("Enter a name");
     } else if (breed === "") {
-      alert("Ingrese una raza");
+      alert("Enter a breed");
     } else if (name.length > 18) {
-      alert("El maximo es de 18 carácteres en el nombre");
+      alert("Maximum 18 characters in the name");
     } else {
       dispatch(
         addDogs({
@@ -75,7 +75,7 @@ const Modal = (props) => {
           <div id={styles.InputContainer}>
             <form onSubmit={handleSubmit}>
               <div>NAME</div>
-              <input maxLength="30" className={styles.Input} />
+              <input maxLength="17" className={styles.Input} />
               <div> BREED</div>
               <Select/>
               <div> BRED FOR</div>

@@ -1,7 +1,12 @@
-#MasterContainer {
-  width: 100vw;
+#MegaContainer{
   font-family: var(--FONT_TEXT);
   color: var(--COLOR_TEXT);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+#MasterContainer {
+  width: 100vw;
 }
 #NavBarContainer {
   margin-top: 4rem;
@@ -19,7 +24,6 @@
   color: var(--COLOR_TEXT);
 }
 #ButtonCreate {
-  text-decoration: none;
   padding: 10px;
   margin: 0px 5px;
   border: 5px solid var(--COLOR_DIRT);
@@ -29,6 +33,7 @@
   cursor: pointer;
 }
 #SelectContainer{
+  width: 30rem;
   display: flex;
   justify-content: space-between;
 }
@@ -51,6 +56,7 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
+  min-height: 70vh;
 }
 #ContainerNumPage {
   width: 100%;
@@ -95,8 +101,47 @@
   border-radius: 20px;
   padding: 8px;
   margin: 0 8px;
-  font-family: var(--FONT_TEXT);
   color: grey;
   font-size: 25px;
   border: solid grey;
+}
+#ContainerContact{
+  margin-top: 27px;
+  width: 100vw;
+  background-color: var(--COLOR_MUD);
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+#EmailContainer{
+  display: flex;
+  flex-direction: row;
+ 
+}
+#ContainerLinks{
+  display: flex;
+  width: 20rem;
+  justify-content: space-between;
+  
+}
+.LinkContactText{
+  text-decoration: none;
+  font-family: var(--FONT_TEXT);
+  color: var(--COLOR_TEXT);
+  
+}
+#Github{
+  background-image: url("../../Img/GitHub.png");
+  height: 40px;
+  width: 40px;
+}
+#Linkedin{
+  background-image: url("../../Img/Linkedin.png");
+  height: 40px;
+  width: 40px;
+}
+#WhatsApp{
+  background-image: url("../../Img/WhatsApp.png");
+  height: 40px;
+  width: 40px;
 }
